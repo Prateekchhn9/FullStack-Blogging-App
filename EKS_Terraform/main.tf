@@ -108,7 +108,7 @@ resource "aws_eks_node_group" "prtk" {
     min_size     = 3
   }
 
-  instance_types = ["t2.small"]   #use t2.small or t2.micro
+  instance_types = ["t2.medium"]   #use t2.small or t2.micro
 
   remote_access {
     ec2_ssh_key = var.ssh_key_name
